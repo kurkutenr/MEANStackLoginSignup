@@ -1,0 +1,31 @@
+
+<table *ngIf="userDetails" class="table-fill">
+  <tbody>
+      <tr>
+          <td>User : {{userDetails.firstName}}</td>
+          <td class="pull-right "><input type="button" (click)="onLogout()" value="Logout" /></td>
+      </tr>
+      
+  </tbody>
+</table>
+<script>
+		function updateVar() {
+			// Get the window object of the HTML document contained within the iFrame.
+			var iWindow = document.getElementById("frame").contentWindow;
+
+			// var inp = document.getElementById("var");
+
+			// Assign the value of the Harlowe 'var' variable to the input field.
+            console.log("sdfsdfsdf")
+			inp.value = iWindow.harlowe.State.variables['current'];
+		}
+	</script>
+
+<div class="table-fill embed-responsive">
+    
+    <div class="" [innerHTML]="yt | safe: 'html'">
+
+    </div>
+
+</div>
+
